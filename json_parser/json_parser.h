@@ -1,5 +1,10 @@
+typedef struct JSONKeyValuePair {
+	const char* key;
+	const char* value;
+} JSONKeyValuePair;
+
 typedef struct JSONDocument {
-	void* foo;
+	JSONKeyValuePair* pairs;
 } JSONDocument;
 
 JSONDocument parse(const char* contents);

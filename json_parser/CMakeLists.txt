@@ -1,5 +1,9 @@
 add_library(json_parser json_parser.h json_parser.c)
 
+target_compile_options(json_parser PRIVATE
+  /W4
+)
+
 target_include_directories(json_parser
   PUBLIC
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>

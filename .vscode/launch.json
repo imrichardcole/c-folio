@@ -1,5 +1,4 @@
 {
-
     "version": "0.2.0",
     "configurations": [
         {
@@ -11,7 +10,20 @@
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
-            "externalConsole": false
+            "console": "integratedTerminal",
+            "preLaunchTask": "[cmake] build all"
+        },
+        {
+            "name": "strings tests",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/strings/Debug/strings_tests.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "console": "integratedTerminal",
+            "preLaunchTask": "[cmake] build all"
         }
     ]
 }
