@@ -1,0 +1,17 @@
+{
+
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "json_parser tests",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/json_parser/Debug/json_parser_tests.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false
+        }
+    ]
+}
