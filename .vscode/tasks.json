@@ -15,7 +15,21 @@
             "problemMatcher": []
         },
         {
-            "label": "[cmake] build",
+            "label": "[cmake] clean",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "build",
+                "--verbose",
+                "--target",
+                "clean"
+            ],
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "[cmake] build all",
             "type": "shell",
             "command": "cmake",
             "args": [
@@ -23,8 +37,12 @@
                 "build",
                 "--verbose"
             ],
-            "group": "build",
-            "problemMatcher": ["$msCompile"]
+            "problemMatcher": ["$msCompile"],
+            "dependsOn": "[cmake] configure",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
         }
     ]
 }

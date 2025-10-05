@@ -1,5 +1,4 @@
 {
-
     "version": "0.2.0",
     "configurations": [
         {
@@ -11,7 +10,8 @@
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
-            "externalConsole": false
+            "externalConsole": false,
+            "preLaunchTask": "[cmake] build all"
         }
     ]
 }
