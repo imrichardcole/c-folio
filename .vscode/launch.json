@@ -12,6 +12,18 @@
             "environment": [],
             "externalConsole": false,
             "preLaunchTask": "[cmake] build all"
+        },
+        {
+            "name": "scratchpad",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/Debug/scratchpad.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "preLaunchTask": "[cmake] build all"
         }
     ]
 }

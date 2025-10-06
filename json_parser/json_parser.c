@@ -14,7 +14,7 @@ JSONDocument parse(const char* contents) {
     int length = closing_index - opening_index;
 
     char substring[20];
-    strncpy(substring, contents + opening_index, length);
+    strncpy_s(substring, contents + opening_index, length, 4);
     substring[length] = '\0';
     return doc;
 }
