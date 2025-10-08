@@ -10,7 +10,7 @@
                 ".",
                 "-B",
                 "build",
-                "--profiling-output=configure-trace.json",
+                "--profiling-output=build/configure-trace.json",
                 "--profiling-format=google-trace"
             ],
             "group": "build",
