@@ -11,4 +11,4 @@ target_include_directories(json_parser
 
 add_executable(json_parser_tests ../tests/json_parser/json_parser_tests.c)
 
-target_link_libraries(json_parser_tests json_parser)
+target_link_libraries(json_parser_tests json_parser test_utils)

@@ -4,6 +4,7 @@ project(c-folio VERSION 0.0.1 LANGUAGES C)
 
 add_subdirectory(json_parser)
 add_subdirectory(strings)
+add_subdirectory(tests/utils)
 
 if(WIN32)
     add_compile_options(/W4)

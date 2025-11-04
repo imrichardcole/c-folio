@@ -11,6 +11,4 @@ target_include_directories(strings
 
 add_executable(strings_tests ../tests/strings/strings_tests.c)
 
-target_link_libraries(strings_tests strings)
-
-
+target_link_libraries(strings_tests strings test_utils)
