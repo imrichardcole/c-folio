@@ -1,3 +1,5 @@
+#include <stdlib.h>
+
 void print_success(const char *message);
 
 void print_failure(const char *message);

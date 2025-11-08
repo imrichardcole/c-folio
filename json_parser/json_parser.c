@@ -20,5 +20,7 @@ JSONDocument parse(const char* contents) {
 }
 
 const char* get_value(JSONDocument *json, const char* key) {
+    (void)json;
+    (void)key;
     return "example";
 }
